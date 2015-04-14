@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Form</title>
+<script src="jquery-1.11.2.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.ttf" />
+<link rel="stylesheet" type="text/css" href="plugins/bootstrap-datepicker-master/css/datepicker3.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="Formbody container">
+	<ul class="nav nav-tabs" role="tablist" >
+		<li role="presentation" class="active"><a href="#city" aria-controls="city" role="tab" data-toggle="tab">City</a></li>
+		<li role="presentation"><a href="#region" aria-controls="region" role="tab" data-toggle="tab">Region</a></li>
+		<li role="presentation"><a href="#area" aria-controls="area" role="tab" data-toggle="tab">Area</a></li>
+		<li role="presentation"><a href="#category" aria-controls="category" role="tab" data-toggle="tab">Category</a></li>
+		<li role="presentation"><a href="#brand" aria-controls="brand" role="tab" data-toggle="tab">Brand</a></li>
+		<li role="presentation"><a href="#store" aria-controls="store" role="tab" data-toggle="tab">Store</a></li>
+		<li role="presentation"><a href="#deal" aria-controls="deal" role="tab" data-toggle="tab">Deal</a></li>
+</ul>
+
+	<div class="tab-content">
+	  <div role="tabpanel" class="tab-pane active" id="city">
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> City </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="cityid">City ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="cityname">City Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="col-md-3">
+			</div>
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="region">
+		<!-- Region Form -->
+	
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Region </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Region ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionname">Region Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">City ID:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="area">
+		<!-- Area Form -->
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Area </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Areaid">Area ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Areaname">Area Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Select City:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Region:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>	
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="category">
+		<!-- Category Form -->
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Category </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Categoryid">Category ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Categoryname">Category Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="brand">
+		<!-- Brand Form -->
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Brand </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Brandid">Brand ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Brandname">Brand Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Brand Logo:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="file" id="exampleInputFile">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Category:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>	
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="store">
+		<!-- Store Form -->
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-6">
+						<p> Store Contact Person</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="name">Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Designation">Designation:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="email">Email ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="contactno">Contact No:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="employeeid">Employee ID:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Store</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">City:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Region:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="areaid">Area:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Storename">Store Name:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Address">Address line 1</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Address">Address line 2</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="zip">Zip Code:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Categories">Categories:</label>
+					</div>
+					<div class="col-md-8">
+						<select name="form-control" multiple>
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="opel">Opel</option>
+						  <option value="audi">Audi</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="brands">Brands:</label>
+					</div>
+					<div class="col-md-8">
+						<select name="form-control" multiple>
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="opel">Opel</option>
+						  <option value="audi">Audi</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="facilitylisting">Facility Listing:</label>
+					</div>
+					<div class="col-md-8">
+						<select name="form-control" multiple>
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="opel">Opel</option>
+						  <option value="audi">Audi</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="latitude">Latitude:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="longitude">Longitude:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="storeimage">Store Image:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="file" id="exampleInputFile">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Status">Status:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Active</option>
+							<option>Not Active</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert Store</button>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+	  </div>
+	  <div role="tabpanel" class="tab-pane" id="deal">
+		<!-- Deal Form -->
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="catagorylabel col-md-2">
+						<p> Deal </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Deal Description:</label>
+					</div>
+					<div class="col-md-8">
+						<textarea name="message">
+						
+						</textarea>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">City:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="Regionid">Region:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="areaid">Area:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="selectstore">Select Store:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="catid">Cat-ID:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="brandid">Brand ID:</label>
+					</div>
+					<div class="col-md-8">
+						<select class="form-control" id="sel1">
+							<option>Haiderabad</option>
+							<option>Dehli</option>
+							<option>Kolkata</option>
+							<option>Channai</option>
+							<option>Mombai</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="startdate">Start Date:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="date" name="sdate">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class=" col-md-1">
+					</div>
+					<div class=" col-md-3">
+						<label for="enddate">End Date:</label>
+					</div>
+					<div class="col-md-8">
+						<input type="date" name="edate">
+					</div>
+				</div>			
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success">Insert</button>
+					</div>
+				</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+	  </div>
+	</div>
+</div>
+</div>
+</body>
+</html>
